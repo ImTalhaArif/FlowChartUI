@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-or">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="or" clip-path="url(#clip-or)">
+    <rect width="60" height="60" fill="#fff"/>
+    <g id="Group_96" data-name="Group 96">
+      <rect id="Rectangle_20" data-name="Rectangle 20" width="56" height="18" rx="9" transform="translate(2 21)" fill="#2d2d2d"/>
+      <text id="OR-2" data-name="OR" transform="translate(30 35)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-9.464" y="0">OR</tspan></text>
+    </g>
+  </g>
+</svg>

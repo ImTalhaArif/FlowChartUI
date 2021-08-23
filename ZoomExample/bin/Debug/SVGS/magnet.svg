@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-magnet">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="magnet" clip-path="url(#clip-magnet)">
+    <rect width="60" height="60" fill="#fff"/>
+    <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(2 2)">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M840,56H823V28a28,28,0,1,1,56,0V56H862V30a11,11,0,0,0-22,0V56Z" transform="translate(-823 0)" fill="#2d2d2d"/>
+    </g>
+  </g>
+</svg>

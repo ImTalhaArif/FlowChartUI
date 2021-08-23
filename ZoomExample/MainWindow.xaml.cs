@@ -31,7 +31,7 @@ namespace ZoomExample
         private void OPEN_Click(object sender, RoutedEventArgs e)
         {
 
-            Image myImage = new Image();
+            Image myImage = new Image(); 
 
 
 

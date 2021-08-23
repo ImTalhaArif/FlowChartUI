@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-scale">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="scale" clip-path="url(#clip-scale)">
+    <rect width="60" height="60" fill="#fff"/>
+    <g id="Group_86" data-name="Group 86">
+      <path id="Path_12" data-name="Path 12" d="M-204.172,1376.782h19.978s-1.1,8.719-9.955,8.719S-204.172,1376.782-204.172,1376.782Z" transform="translate(205.893 -1345.386)" fill="#2d2d2d"/>
+      <path id="Path_13" data-name="Path 13" d="M-201.263,1373.761l7.024-16.582,7.077,16.582" transform="translate(205.952 -1346.257)" fill="none" stroke="#2d2d2d" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="4"/>
+      <path id="Path_14" data-name="Path 14" d="M-194.352,1356.92h20.332" transform="translate(205.131 -1344.767)" fill="none" stroke="#2d2d2d" stroke-width="4"/>
+      <path id="Path_15" data-name="Path 15" d="M-176.339,1357.92v40.841h-8.128" transform="translate(206.291 -1347.863)" fill="none" stroke="#2d2d2d" stroke-width="4"/>
+      <path id="Path_12-2" data-name="Path 12" d="M-184.194,1376.782h-19.978s1.1,8.719,9.955,8.719S-184.194,1376.782-184.194,1376.782Z" transform="translate(241.83 -1345.386)" fill="#2d2d2d"/>
+      <path id="Path_13-2" data-name="Path 13" d="M-187.162,1373.761l-7.024-16.582-7.077,16.582" transform="translate(241.831 -1346.257)" fill="none" stroke="#2d2d2d" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="4"/>
+      <path id="Path_14-2" data-name="Path 14" d="M-174.02,1356.92h-20.332" transform="translate(222.598 -1344.767)" fill="none" stroke="#2d2d2d" stroke-width="4"/>
+      <path id="Path_15-2" data-name="Path 15" d="M-184.467,1357.92v40.841h8.128" transform="translate(213.872 -1347.863)" fill="none" stroke="#2d2d2d" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

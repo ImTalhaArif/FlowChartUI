@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-flag">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="flag" clip-path="url(#clip-flag)">
+    <rect width="60" height="60" fill="#fff"/>
+    <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(8 2)">
+      <path id="Union_1" data-name="Union 1" d="M199-240v-48a4,4,0,0,1,4-4,4,4,0,0,1,4,4v.537c1.719-1.505,5.773-4.579,10.191-4.537,5.847.055,7.323,5.347,13.526,5.347A22.382,22.382,0,0,0,242-290.108v24.241a24.964,24.964,0,0,1-11.283,2.955c-6.2,0-7.607-3.734-13.526-3.734A20.712,20.712,0,0,0,207-263.479V-240a4,4,0,0,1-4,4A4,4,0,0,1,199-240Z" transform="translate(-199 292)" fill="#2d2d2d"/>
+    </g>
+  </g>
+</svg>

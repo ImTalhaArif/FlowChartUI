@@ -1,0 +1,7 @@
+<svg id="btn_concept_Hover_State_" data-name="btn_concept (Hover State)" xmlns="http://www.w3.org/2000/svg" width="177" height="38" viewBox="0 0 177 38">
+  <path id="Rectangle_12" data-name="Rectangle 12" d="M0,0H158a19,19,0,0,1,19,19v0a19,19,0,0,1-19,19H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#36afce"/>
+  <text id="CONCEPT" transform="translate(68 25)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">CONCEPT</tspan></text>
+  <g id="Component_42_3" data-name="Component 42 – 3" transform="translate(10 2)">
+    <path id="Subtraction_15" data-name="Subtraction 15" d="M29,34H5a5.006,5.006,0,0,1-5-5V5A5.006,5.006,0,0,1,5,0H29a5.006,5.006,0,0,1,5,5V29A5.006,5.006,0,0,1,29,34Zm2.629-7.779-5.407,5.407a3.947,3.947,0,0,0,5.407-5.407ZM5.6,2.373A3.039,3.039,0,0,0,2.567,5.409V28.591a3.036,3.036,0,1,0,6.071,0V5.409A3.039,3.039,0,0,0,5.6,2.373Zm22.63,21.913a3.951,3.951,0,0,0-3.947,3.947,3.9,3.9,0,0,0,.41,1.753L29.987,24.7A3.906,3.906,0,0,0,28.232,24.287Zm0-22.465a3.947,3.947,0,1,0,3.946,3.947A3.951,3.951,0,0,0,28.232,1.822Z" transform="translate(0)" fill="#fff"/>
+  </g>
+</svg>

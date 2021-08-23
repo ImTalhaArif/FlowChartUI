@@ -12,3 +12,17 @@ C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\obj\x86\Debug\ZoomExample
 C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\obj\x86\Debug\ZoomExample.csproj.CoreCompileInputs.cache
 C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\obj\x86\Debug\ZoomExample.exe
 C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\obj\x86\Debug\ZoomExample.pdb
+D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\ZoomExample.exe
+D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\ZoomExample.pdb
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample.csprojAssemblyReference.cache
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\MainWindow.baml
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\Resources.baml
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\MainWindow.g.cs
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\App.g.cs
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.cache
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample.g.resources
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample.Properties.Resources.resources
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.cache
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample.csproj.CoreCompileInputs.cache
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample.exe
+D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample.pdb
