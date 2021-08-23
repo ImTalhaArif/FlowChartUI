@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-val">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="val" clip-path="url(#clip-val)">
+    <rect width="60" height="60" fill="#fff"/>
+    <g id="Group_98" data-name="Group 98">
+      <path id="Rectangle_20" data-name="Rectangle 20" d="M0,0H47a9,9,0,0,1,9,9V9a9,9,0,0,1-9,9H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(2 21)" fill="#2d2d2d"/>
+      <text id="val-2" data-name="val" transform="translate(30 35)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-8.61" y="0">val</tspan></text>
+    </g>
+  </g>
+</svg>

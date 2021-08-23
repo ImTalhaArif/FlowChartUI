@@ -1,0 +1,22 @@
+<svg id="btn_homophone_Hover_State_" data-name="btn_homophone (Hover State)" xmlns="http://www.w3.org/2000/svg" width="177" height="38" viewBox="0 0 177 38">
+  <path id="Rectangle_12" data-name="Rectangle 12" d="M0,0H158a19,19,0,0,1,19,19v0a19,19,0,0,1-19,19H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#36afce"/>
+  <text id="HOMOPHONE" transform="translate(56 25)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">HOMOPHONE</tspan></text>
+  <g id="Group_136" data-name="Group 136" transform="translate(8.521 11.72)">
+    <g id="Group_134" data-name="Group 134" transform="translate(3 3)">
+      <g id="Rectangle_26" data-name="Rectangle 26" transform="translate(0 0.28)" fill="#fff" stroke="#fff" stroke-width="2">
+        <rect width="10" height="10" rx="3" stroke="none"/>
+        <rect x="1" y="1" width="8" height="8" rx="2" fill="none"/>
+      </g>
+      <g id="Rectangle_27" data-name="Rectangle 27" transform="translate(26 0.28)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="10" height="10" rx="3" stroke="none"/>
+        <rect x="1" y="1" width="8" height="8" rx="2" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_71" data-name="Group 71" transform="translate(18.03 3.126)">
+      <g id="Group_69" data-name="Group 69">
+        <rect id="Rectangle_24" data-name="Rectangle 24" width="7.068" height="2.57" rx="1.285" transform="translate(1.817 0) rotate(45)" fill="#fff"/>
+        <rect id="Rectangle_25" data-name="Rectangle 25" width="7.068" height="2.57" rx="1.285" transform="translate(0 8.21) rotate(-45)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg id="btn_magnet_Hover_State_" data-name="btn_magnet (Hover State)" xmlns="http://www.w3.org/2000/svg" width="177" height="38" viewBox="0 0 177 38">
+  <path id="Rectangle_12" data-name="Rectangle 12" d="M0,0H158a19,19,0,0,1,19,19v0a19,19,0,0,1-19,19H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#36afce"/>
+  <text id="MAGNET" transform="translate(54 25)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">MAGNET</tspan></text>
+  <path id="Subtraction_1" data-name="Subtraction 1" d="M7.893,26H0V13A13,13,0,0,1,22.192,3.808,12.914,12.914,0,0,1,26,13V26H18.107V13.928a5.107,5.107,0,1,0-10.214,0V26Z" transform="translate(14 6)" fill="#fff"/>
+</svg>

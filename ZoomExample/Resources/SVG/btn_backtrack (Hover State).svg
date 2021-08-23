@@ -1,0 +1,5 @@
+<svg id="btn_backtrack_Hover_State_" data-name="btn_backtrack (Hover State)" xmlns="http://www.w3.org/2000/svg" width="177" height="38" viewBox="0 0 177 38">
+  <path id="Rectangle_12" data-name="Rectangle 12" d="M0,0H158a19,19,0,0,1,19,19v0a19,19,0,0,1-19,19H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#36afce"/>
+  <text id="BACKTRACK" transform="translate(54 25)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">BACKTRACK</tspan></text>
+  <path id="Subtraction_2" data-name="Subtraction 2" d="M13,26A13,13,0,0,1,3.808,3.808,13,13,0,1,1,22.192,22.193,12.916,12.916,0,0,1,13,26ZM10.992,7.568a1.976,1.976,0,0,0-1.192.4l-4.882,3.66a2,2,0,0,0,0,3.2L9.8,18.493a1.975,1.975,0,0,0,1.192.4,2.011,2.011,0,0,0,2.008-2v-1.92l4.693,3.52a1.976,1.976,0,0,0,1.193.4,2.01,2.01,0,0,0,2.007-2V9.572a2.01,2.01,0,0,0-2.007-2,1.975,1.975,0,0,0-1.192.4L13,11.491V9.572a1.97,1.97,0,0,0-.615-1.446A2.045,2.045,0,0,0,10.992,7.568Z" transform="translate(15 7)" fill="#fff"/>
+</svg>

@@ -1,0 +1,69 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Canvas x:Key="Kompass" Name="Layer" Width="358.14285" Height="358.85715" ClipToBounds="True" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <Canvas Name="layer1" RenderTransform="1,0,0,1,-76.642848,-174.71933">
+            <Path Fill="#FFFFFFFF" Stroke="#FF4D4D4D" StrokeMiterLimit="4" Name="path2889" RenderTransform="1.5422222,0,0,1.31203,-821.5048,-85.892824">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M780.00002,335.93362C780.00002,388.40068 744.02291,430.93362 699.64288,430.93362 655.26286,430.93362 619.28574,388.40068 619.28574,335.93362 619.28574,283.46657 655.26286,240.93362 699.64288,240.93362 743.08949,240.93362 778.66819,281.75897 779.96426,333.09965" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FFB3B3B3" Stroke="#FF000000" StrokeMiterLimit="4" Name="path2887">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M222.85715,332.36218L178.21429,271.6479 257.5,333.79075 337.5,273.43361 275.35715,353.79075 336.07143,433.07647 257.85715,372.00504 176.78572,430.93361 237.14286,352.71932 222.85715,332.36218z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FF000000" Stroke="#FF000000" StrokeThickness="2.40760922" StrokeMiterLimit="4" Name="path2908">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M372.56998,240.36307L402.60114,209.28679 402.22201,221.09274 409.95726,198.24256 387.4339,205.93544 399.26434,205.63077 368.92986,236.70705 372.56998,240.36307z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FF000000" Stroke="#FF000000" StrokeThickness="2.40760922" StrokeMiterLimit="4" Name="path2908_4">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M364.65403,470.4886L395.73031,500.51976 383.92436,500.14063 406.77454,507.87588 399.08166,485.35252 399.38633,497.18296 368.31005,466.84848 364.65403,470.48861z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FF000000" Stroke="#FF000000" StrokeThickness="2.40760922" StrokeMiterLimit="4" Name="path2908_4_8">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M151.06025,235.66433L119.98397,205.63317 131.78992,206.0123 108.93974,198.27705 116.63262,220.80041 116.32795,208.96997 147.40423,239.30445 151.06026,235.66432z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FF000000" Stroke="#FF000000" StrokeThickness="2.40760922" StrokeMiterLimit="4" Name="path2908_4_8_8">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M145.445,467.7305L115.41384,498.80678 115.79297,487.00083 108.05772,509.85101 130.58108,502.15813 118.75064,502.4628 149.08512,471.38652 145.44499,467.73049z" />
+                </Path.Data>
+            </Path>
+        </Canvas>
+        <Canvas Name="layer2" RenderTransform="1,0,0,1,-76.642848,-174.71933">
+            <Path Fill="#FF333333" Stroke="#FF000000" StrokeMiterLimit="4" Name="path2830">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M235,330.21933L257.85714,175.21933 277.14285,331.6479 434.28571,354.50504 277.85714,374.50504 255,533.07647 235,375.21933 77.142848,350.93361 235,330.21933z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FFB3B3B3" Name="path2836" RenderTransform="1,0,0,2.7142857,-294.28571,-582.82496">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M570.71428,344.14789A20.714285,7.5,0,1,1,529.28572,344.14789A20.714285,7.5,0,1,1,570.71428,344.14789z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FFECECEC" Stroke="#FF000000" StrokeThickness="1.14570546" StrokeMiterLimit="4" Name="path2838">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M238.64427,324.6602L253.49857,211.72075 251.51801,326.68904 245.57628,328.7179 238.64427,324.6602z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FFECECEC" Stroke="#FF000000" StrokeThickness="1.14570546" StrokeMiterLimit="4" Name="path2838_1">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M281.27341,334.93503L394.21286,349.78933 279.24457,347.80877 277.21571,341.86704 281.27341,334.93503z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FFECECEC" Stroke="#FF000000" StrokeThickness="1.14570546" StrokeMiterLimit="4" Name="path2838_4">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M275.28429,376.49274L260.42998,489.43219 262.41055,374.4639 268.35228,372.43504 275.28429,376.49274z" />
+                </Path.Data>
+            </Path>
+            <Path Fill="#FFECECEC" Stroke="#FF000000" StrokeThickness="1.14570546" StrokeMiterLimit="4" Name="path2838_9">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero" Figures="M230.86944,371.93219L117.92999,357.07789 232.89828,359.05845 234.92714,365.00018 230.86944,371.93219z" />
+                </Path.Data>
+            </Path>
+        </Canvas>
+    </Canvas>
+</ResourceDictionary>

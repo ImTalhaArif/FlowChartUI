@@ -1,0 +1,5 @@
+<svg id="btn_output_Hover_State_" data-name="btn_output (Hover State)" xmlns="http://www.w3.org/2000/svg" width="177" height="38" viewBox="0 0 177 38">
+  <path id="Rectangle_12" data-name="Rectangle 12" d="M0,0H158a19,19,0,0,1,19,19v0a19,19,0,0,1-19,19H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#36afce"/>
+  <text id="OUTPUT" transform="translate(54 25)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">OUTPUT</tspan></text>
+  <path id="Union_4" data-name="Union 4" d="M12.8,6.6a6.6,6.6,0,1,1,6.6,6.6A6.6,6.6,0,0,1,12.8,6.6ZM8.333,11.267A6.6,6.6,0,0,1,15,.308a6.6,6.6,0,0,0,0,12.583,6.611,6.611,0,0,1-6.667-1.625Zm-6.4,0A6.6,6.6,0,0,1,8.6.308a6.6,6.6,0,0,0,0,12.583,6.612,6.612,0,0,1-6.667-1.625Z" transform="translate(14 13)" fill="#fff"/>
+</svg>

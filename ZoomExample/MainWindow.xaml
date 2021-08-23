@@ -1,0 +1,296 @@
+﻿<Window x:Class="ZoomExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Height="800" Width="1500" Foreground="#FFCB7373" WindowStyle="ThreeDBorderWindow">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Slider Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="1" x:Name="slider"/>
+        <ScrollViewer Name="scrollViewer" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+
+            <Grid Name="grid" Width="1300" Height="800" RenderTransformOrigin="0.5,0.5">
+                <Grid.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform x:Name="scaleTransform"/>
+                    </TransformGroup>
+                </Grid.LayoutTransform>
+                <Viewbox Grid.Column="0" Grid.Row="0">
+                    <Canvas Background="Transparent" Height="800" Width="1300" ButtonBase.Click="OPEN_Click">
+                        <Image Source="C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\Resources\bucket.png" Margin="30,150,0,0" Width="10" Height="10" />
+                        <Image Source="C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\Resources\flag.png" Margin="200,50,0,0" />
+                        <Image Source="C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\Resources\SVG\btn_flag.svg" Margin="350,350,0,0" Width="100" Height="100" />
+                        <Image Source="C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\Resources\treasure.png" Margin="630,450,0,0" />
+
+                        <Image Source="C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\Resources\backtrack.png" Margin="930,320,0,0" />
+                        <Image Source="C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\Resources\magnet.png" Margin="900,150,0,0" Width="50" Height="50"/>
+                        <Image Source="C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\Resources\scale.png" Margin="1050,650,0,0" />
+                        <Image Source="C:\Users\Bytes-04\Documents\New folder (2)\ZoomExample\Resources\timer.png" Margin="1130,50,0,0" Width="50" Height="50"/>
+
+                    </Canvas>
+
+                </Viewbox>
+            </Grid>
+
+        </ScrollViewer>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Background="Black" Height="759" Margin="8,0,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="FlowChartUI" Name="flowchart" Foreground="White" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="5,10,0,0" VerticalAlignment="Top" Width="160" FontWeight="Bold" FontSize="20" FontFamily="Trebuchet MS"/>
+
+        <StackPanel Orientation="Vertical">
+            <Button
+                    x:Name="OPEN"
+                    Width="60"
+                    Height="22                 "
+                    Margin="5,10,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="OPEN_Click"
+                    Content="OPEN"
+                    Cursor="Hand"
+                    FontSize="13"
+                    FontWeight="Bold"
+                    RenderTransformOrigin="0.137,0.114" />
+            <Button
+                    x:Name="SAVE"
+                    Width="60"
+                    Height="22                 "
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="OPEN_Click"
+                    Content="SAVE"
+                    Cursor="Hand"
+                    FontSize="13"
+                    FontWeight="Bold"
+                    RenderTransformOrigin="0.137,0.114" />
+            <Button
+                    x:Name="EXPORT"
+                    Width="60"
+                    Height="22                 "
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="OPEN_Click"
+                    Content="SAVE"
+                    Cursor="Hand"
+                    FontSize="13"
+                    FontWeight="Bold"
+                    RenderTransformOrigin="0.137,0.114" />
+
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,40,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="Magnet"
+                    Cursor="Hand"
+                    FontSize="16" />
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="Flag"
+                    Cursor="Hand"
+                    FontSize="16" />
+
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="Treasure"
+                    Cursor="Hand"
+                    FontSize="16" />
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="Speaker"
+                    Cursor="Hand"
+                    FontSize="16" />
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="BackTrack"
+                    Cursor="Hand"
+                    FontSize="16" />
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="OUTPUT"
+                    Cursor="Hand"
+                    FontSize="16" />
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="HOMOPHONE"
+                    Cursor="Hand"
+                    FontSize="16" />
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="BUCKET"
+                    Cursor="Hand"
+                    FontSize="16" />
+            <Button
+                    Width="135"
+                    Height="40"
+                    Margin="5,6,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Click="OPEN_Click"
+                    Content="SCALE"
+                    Cursor="Hand"
+                    FontSize="16" />
+
+            <Button
+                    Width="60"
+                    Height="20"
+                    HorizontalAlignment="left"
+                    VerticalAlignment="top"
+                    Margin="80,5,0,0"
+                    BorderBrush="White"
+                    Background="Black"
+                    BorderThickness="1"
+                    Content="AND"
+                    Foreground="White"
+                    
+                    FontSize="16"
+                    Cursor="Hand"
+                    Click="OPEN_Click" FontWeight="Bold" FontStretch="Expanded" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Animated"
+                    
+                    >
+
+
+
+            </Button>
+            <Button
+                    Width="60"
+                    Height="20"
+                    HorizontalAlignment="left"
+                    VerticalAlignment="top"
+                    Margin="80,5,0,0"
+                    BorderBrush="White"
+                    Background="Black"
+                    BorderThickness="1"
+                    Content="val"
+                    Foreground="White"
+                    
+                    FontSize="16"
+                    Cursor="Hand"
+                    Click="OPEN_Click" FontWeight="Bold" FontStretch="Expanded" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Animated"
+                    
+                    >
+
+
+
+
+            </Button>
+            <Button
+                    Width="60"
+                    Height="20"
+                    HorizontalAlignment="left"
+                    VerticalAlignment="top"
+                    Margin="0,-20,0,0"
+                    BorderBrush="White"
+                    Background="Black"
+                    BorderThickness="1"
+                    Content="OR"
+                    Foreground="White"
+                    
+                    FontSize="16"
+                    Cursor="Hand"
+                    Click="OPEN_Click" FontWeight="Bold" FontStretch="Expanded" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Animated"
+                    
+                    >
+
+
+
+            </Button>
+            <Button 
+                    Width="60"
+                    Height="20"
+                    HorizontalAlignment="left"
+                    VerticalAlignment="top"
+                    Margin="0,30,0,0"
+                    BorderBrush="white"
+                    Background="White"
+                    BorderThickness="2"
+                    Content="\"
+                    Foreground="Black"></Button>
+            <Button 
+                    Width="60"
+                    Height="20"
+                    HorizontalAlignment="left"
+                    VerticalAlignment="top"
+                    Margin="80,-20,0,0"
+                    BorderBrush="white"
+                    Background="White"
+                    BorderThickness="2"
+                    Content="X"
+                    Foreground="Black"></Button>
+        </StackPanel>
+
+    </Grid>
+    
+</Window>

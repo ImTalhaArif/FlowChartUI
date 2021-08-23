@@ -1,0 +1,5 @@
+<svg id="btn_flag_Hover_State_" data-name="btn_flag (Hover State)" xmlns="http://www.w3.org/2000/svg" width="177" height="38" viewBox="0 0 177 38">
+  <path id="Rectangle_12" data-name="Rectangle 12" d="M0,0H158a19,19,0,0,1,19,19v0a19,19,0,0,1-19,19H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#36afce"/>
+  <text id="FLAG" transform="translate(54 25)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">FLAG</tspan></text>
+  <path id="Union_1" data-name="Union 1" d="M0,24.659V1.9a1.9,1.9,0,1,1,3.794,0v.255A7.95,7.95,0,0,1,8.627,0C11.4.026,12.1,2.536,15.04,2.536A10.615,10.615,0,0,0,20.391.9V12.392a11.836,11.836,0,0,1-5.351,1.4c-2.941,0-3.606-1.771-6.413-1.771a9.821,9.821,0,0,0-4.833,1.5V24.659a1.9,1.9,0,1,1-3.794,0Z" transform="translate(18.831 7)" fill="#fff"/>
+</svg>
