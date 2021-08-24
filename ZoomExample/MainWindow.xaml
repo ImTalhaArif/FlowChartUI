@@ -25,11 +25,11 @@
                     </TransformGroup>
                 </Grid.LayoutTransform>
                 <Viewbox Grid.Column="0" Grid.Row="0">
-                    <Canvas Background="Transparent" Height="686" Width="1307" ButtonBase.Click="OPEN_Click">
-                        
-                        
-            
-                        <SVG:SvgViewbox Source="magnet.svg" AutoSize="True" OptimizePath="False" TextAsGeometry="True" Canvas.Left="469" Canvas.Top="220"></SVG:SvgViewbox>
+                    <Canvas x:Name="canvasss" Background="Transparent" Height="686" Width="1307" ButtonBase.Click="OPEN_Click">
+
+
+
+                        <SVG:SvgViewbox Source="D:\Hannan\FlowChartUI\ZoomExample\Resources\magnet.svg" AutoSize="True" OptimizePath="False" TextAsGeometry="True" Canvas.Left="469" Canvas.Top="220"></SVG:SvgViewbox>
                     </Canvas>
 
                 </Viewbox>

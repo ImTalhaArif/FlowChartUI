@@ -1,6 +1,8 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using SharpVectors;
+using SharpVectors.Converters;
 
 namespace ZoomExample
 {
@@ -31,8 +33,17 @@ namespace ZoomExample
         private void OPEN_Click(object sender, RoutedEventArgs e)
         {
 
-            Image myImage = new Image(); 
-
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/magnet.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+            
+            canvasss.Children.Add(svg);
 
 
 
