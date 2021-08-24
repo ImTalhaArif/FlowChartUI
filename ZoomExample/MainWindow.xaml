@@ -29,7 +29,9 @@
 
 
 
-                        <SVG:SvgViewbox Source="D:\Hannan\FlowChartUI\ZoomExample\Resources\magnet.svg" AutoSize="True" OptimizePath="False" TextAsGeometry="True" Canvas.Left="469" Canvas.Top="220"></SVG:SvgViewbox>
+                        <SVG:SvgViewbox Source="C:\Users\Bytes-04\Documents\FlowChartUI\FlowChartUI-master (1)\FlowChartUI-master\ZoomExample\Resources\magnet.svg" AutoSize="True" OptimizePath="False" TextAsGeometry="True" Canvas.Left="469" Canvas.Top="220"></SVG:SvgViewbox>
+                    
+                        
                     </Canvas>
 
                 </Viewbox>
@@ -40,6 +42,7 @@
         <Label Content="FlowChartUI" Name="flowchart" Foreground="White" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="5,10,0,0" VerticalAlignment="Top" Width="160" FontWeight="Bold" FontSize="20" FontFamily="Trebuchet MS"/>
 
         <StackPanel Orientation="Vertical">
+            
             <Button
                     x:Name="OPEN"
                     Width="60"
@@ -108,7 +111,7 @@
                     Background="White"
                     BorderBrush="Black"
                     BorderThickness="2"
-                    Click="OPEN_Click"
+                    Click="OPEN_Flag"
                     Content="Flag"
                     Cursor="Hand"
                     FontSize="16" />
@@ -122,7 +125,7 @@
                     Background="White"
                     BorderBrush="Black"
                     BorderThickness="2"
-                    Click="OPEN_Click"
+                    Click="OPEN_Treasure"
                     Content="Treasure"
                     Cursor="Hand"
                     FontSize="16" />
@@ -135,7 +138,7 @@
                     Background="White"
                     BorderBrush="Black"
                     BorderThickness="2"
-                    Click="OPEN_Click"
+                    Click="OPEN_Speaker"
                     Content="Speaker"
                     Cursor="Hand"
                     FontSize="16" />
@@ -148,7 +151,7 @@
                     Background="White"
                     BorderBrush="Black"
                     BorderThickness="2"
-                    Click="OPEN_Click"
+                    Click="OPEN_Backtrack"
                     Content="BackTrack"
                     Cursor="Hand"
                     FontSize="16" />
@@ -161,7 +164,7 @@
                     Background="White"
                     BorderBrush="Black"
                     BorderThickness="2"
-                    Click="OPEN_Click"
+                    Click="OPEN_Output"
                     Content="OUTPUT"
                     Cursor="Hand"
                     FontSize="16" />
@@ -174,7 +177,7 @@
                     Background="White"
                     BorderBrush="Black"
                     BorderThickness="2"
-                    Click="OPEN_Click"
+                    Click="OPEN_Homophone"
                     Content="HOMOPHONE"
                     Cursor="Hand"
                     FontSize="16" />
@@ -187,7 +190,7 @@
                     Background="White"
                     BorderBrush="Black"
                     BorderThickness="2"
-                    Click="OPEN_Click"
+                    Click="OPEN_Bucket"
                     Content="BUCKET"
                     Cursor="Hand"
                     FontSize="16" />
@@ -200,7 +203,7 @@
                     Background="White"
                     BorderBrush="Black"
                     BorderThickness="2"
-                    Click="OPEN_Click"
+                    Click="OPEN_Scale"
                     Content="SCALE"
                     Cursor="Hand"
                     FontSize="16" />
