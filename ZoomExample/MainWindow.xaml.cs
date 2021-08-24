@@ -1,6 +1,9 @@
-﻿using System.Windows;
+﻿using System.Runtime.InteropServices;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Media;
 using SharpVectors;
 using SharpVectors.Converters;
 
@@ -29,6 +32,44 @@ namespace ZoomExample
 
             slider.ValueChanged += OnSliderValueChanged;
         }
+        SvgViewbox dragObj = null;
+        Point offset;
+       
+        private void CanvasImages_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+            this.dragObj = null;
+            this.canvasss.ReleaseMouseCapture();
+           
+        }
+        private void CanvasImages_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+
+            if (this.dragObj == null)
+            {
+                return;
+            }
+            else
+            {
+                var position = e.GetPosition(sender as IInputElement);
+                Canvas.SetTop(this.dragObj, position.Y - this.offset.Y);
+                Canvas.SetLeft(this.dragObj, position.X - this.offset.X);
+            }
+
+            
+        }
+
+
+
+        private void UserControl_MouseMove(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void UserControl_PreviewGiveFeedback(object sender, GiveFeedbackEventArgs e)
+        {
+       
+        }
 
         private void OPEN_Click(object sender, RoutedEventArgs e)
         {
@@ -40,19 +81,30 @@ namespace ZoomExample
             svg.AllowDrop = true;
             svg.OptimizePath = false;
             svg.TextAsGeometry = true;
-            svg.MouseMove += OnMouseMove;
-            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+            Canvas.SetTop(svg, 220);
+            Canvas.SetLeft(svg, 469);
+            // svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += Img_MouseLeftButtonDown;
+            //svg.PreviewMouseDown += Img_MouseLeftButtonDown;
             
             canvasss.Children.Add(svg);
 
 
 
         }
+        private void Img_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.dragObj = sender as SvgViewbox;
+            this.offset = e.GetPosition(this.canvasss);
+            this.offset.Y -= Canvas.GetTop(this.dragObj);
+            this.offset.X -= Canvas.GetLeft(this.dragObj);
+            this.canvasss.CaptureMouse();
+        }
 
 
         void OnMouseMove(object sender, MouseEventArgs e)
         {
-            if (lastDragPoint.HasValue)
+            /*if (lastDragPoint.HasValue)
             {
                 Point posNow = e.GetPosition(scrollViewer);
 
@@ -63,18 +115,18 @@ namespace ZoomExample
 
                 scrollViewer.ScrollToHorizontalOffset(scrollViewer.HorizontalOffset - dX);
                 scrollViewer.ScrollToVerticalOffset(scrollViewer.VerticalOffset - dY);
-            }
+            }*/
         }
 
         void OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var mousePos = e.GetPosition(scrollViewer);
+        /*    var mousePos = e.GetPosition(scrollViewer);
             if (mousePos.X <= scrollViewer.ViewportWidth && mousePos.Y < scrollViewer.ViewportHeight) //make sure we still can use the scrollbars
             {
                 scrollViewer.Cursor = Cursors.SizeAll;
                 lastDragPoint = mousePos;
                 Mouse.Capture(scrollViewer);
-            }
+            }*/
         }
 
         void OnPreviewMouseWheel(object sender, MouseWheelEventArgs e)
