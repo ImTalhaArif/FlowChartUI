@@ -86,6 +86,8 @@ namespace ZoomExample
             // svg.MouseMove += OnMouseMove;
             svg.MouseLeftButtonDown += Img_MouseLeftButtonDown;
             //svg.PreviewMouseDown += Img_MouseLeftButtonDown;
+            svg.AutoSize = true;
+
             
             canvasss.Children.Add(svg);
 
@@ -99,6 +101,158 @@ namespace ZoomExample
             this.offset.Y -= Canvas.GetTop(this.dragObj);
             this.offset.X -= Canvas.GetLeft(this.dragObj);
             this.canvasss.CaptureMouse();
+        }
+        private void OPEN_Flag(object sender, RoutedEventArgs e)
+        {
+
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/flag.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+
+            canvasss.Children.Add(svg);
+
+ 
+
+        }
+
+        private void OPEN_Treasure(object sender, RoutedEventArgs e)
+        {
+
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+
+            canvasss.Children.Add(svg);
+
+
+
+        }
+
+        private void OPEN_Speaker(object sender, RoutedEventArgs e)
+        {
+
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+
+            canvasss.Children.Add(svg);
+
+
+
+        }
+
+
+        private void OPEN_Backtrack(object sender, RoutedEventArgs e)
+        {
+
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+
+            canvasss.Children.Add(svg);
+
+
+
+        }
+
+        private void OPEN_Output(object sender, RoutedEventArgs e)
+        {
+
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+
+            canvasss.Children.Add(svg);
+
+
+
+        }
+
+        private void OPEN_Homophone(object sender, RoutedEventArgs e)
+        {
+
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+
+            canvasss.Children.Add(svg);
+
+
+
+        }
+
+        private void OPEN_Bucket(object sender, RoutedEventArgs e)
+        {
+
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+
+            canvasss.Children.Add(svg);
+
+
+
+        }
+
+        private void OPEN_Scale(object sender, RoutedEventArgs e)
+        {
+
+            SvgViewbox svg = new SvgViewbox();
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svg";
+            svg.Source = new System.Uri(path);
+            svg.AutoSize = true;
+            svg.AllowDrop = true;
+            svg.OptimizePath = false;
+            svg.TextAsGeometry = true;
+            svg.MouseMove += OnMouseMove;
+            svg.MouseLeftButtonDown += OnMouseLeftButtonDown;
+
+            canvasss.Children.Add(svg);
+
+
+
         }
 
 
