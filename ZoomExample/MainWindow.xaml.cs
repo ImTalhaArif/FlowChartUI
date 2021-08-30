@@ -393,6 +393,21 @@ namespace ZoomExample
 
         private void OPEN_Scale(object sender, RoutedEventArgs e)
         {
+            Line objLine = new Line();
+
+            objLine.Stroke = System.Windows.Media.Brushes.Black;
+            objLine.Fill = System.Windows.Media.Brushes.Black;
+
+            //StartPoint
+            objLine.X1 = aa.ActualWidth + aa.Margin.Left;
+            objLine.Y1 = aa.ActualHeight + aa.Margin.Top;
+
+            //EndPoint
+            objLine.X2 = Application.Current.MainWindow.ActualWidth;
+            objLine.Y2 = Application.Current.MainWindow.ActualHeight;
+
+            grid.Children.Add(objLine);
+
 
             SvgViewbox svg = new SvgViewbox();
             string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svggity";
@@ -408,6 +423,22 @@ namespace ZoomExample
 
 
 
+        }
+
+        private void OPEN_Line(object sender, RoutedEventArgs e)
+        {
+            Line myLine;
+            myLine = new Line();
+            myLine.Stroke = Brushes.Black;
+            myLine.X1 = 10;
+            myLine.X2 = 1000;
+            myLine.Y1 = 10;
+            myLine.Y2 = 600;
+            myLine.HorizontalAlignment = HorizontalAlignment.Left;
+            myLine.VerticalAlignment = VerticalAlignment.Center;
+            myLine.StrokeThickness = 6;
+            grid.Children.Add(myLine);
+            
         }
 
 
