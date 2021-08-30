@@ -1,11 +1,15 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Shapes;
 using SharpVectors;
 using SharpVectors.Converters;
+
 
 namespace ZoomExample
 {
@@ -32,28 +36,40 @@ namespace ZoomExample
 
             slider.ValueChanged += OnSliderValueChanged;
         }
-        SvgViewbox dragObj = null;
+        Viewbox dragObj = null;
+        Path linePath = null;
         Point offset;
+        Point offsetForLine;
        
+
+
         private void CanvasImages_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
 
-            this.dragObj = null;
+            dragObj = null;
             this.canvasss.ReleaseMouseCapture();
            
         }
         private void CanvasImages_PreviewMouseMove(object sender, MouseEventArgs e)
         {
-
-            if (this.dragObj == null)
+            /*if(linePath != null)
+            {
+               // linePath.Data.
+                var linePosition = e.GetPosition(sender as Path);
+                LineGeometry myLineGeometry = new LineGeometry();
+                myLineGeometry.StartPoint = new Point(linePosition.X, linePosition.Y);
+                myLineGeometry.EndPoint = new Point(position.X + 10, position.Y);
+            }*/
+            if (dragObj == null)
             {
                 return;
             }
             else
             {
                 var position = e.GetPosition(sender as IInputElement);
-                Canvas.SetTop(this.dragObj, position.Y - this.offset.Y);
-                Canvas.SetLeft(this.dragObj, position.X - this.offset.X);
+               // MessageBox.Show(position.X + " " + position.Y);
+                Canvas.SetTop(dragObj, position.Y - this.offset.Y);
+                Canvas.SetLeft(dragObj, position.X - this.offset.X);
             }
 
             
@@ -74,6 +90,19 @@ namespace ZoomExample
         private void OPEN_Click(object sender, RoutedEventArgs e)
         {
 
+            Viewbox dynamicViewbox = new Viewbox();
+            // Set StretchDirection and Stretch properties  
+            dynamicViewbox.StretchDirection = StretchDirection.Both;
+            dynamicViewbox.Stretch = Stretch.Uniform;
+            dynamicViewbox.Width = 30;
+            dynamicViewbox.Height = 20;
+
+            Button magnetSvg = new Button();
+            magnetSvg.Width = 30;
+            magnetSvg.Height = 20;
+           
+
+
             SvgViewbox svg = new SvgViewbox();
             string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/magnet.svg";
             svg.Source = new System.Uri(path);
@@ -81,26 +110,152 @@ namespace ZoomExample
             svg.AllowDrop = true;
             svg.OptimizePath = false;
             svg.TextAsGeometry = true;
-            Canvas.SetTop(svg, 220);
-            Canvas.SetLeft(svg, 469);
+           
             // svg.MouseMove += OnMouseMove;
-            svg.MouseLeftButtonDown += Img_MouseLeftButtonDown;
+            dynamicViewbox.MouseLeftButtonDown += Img_MouseLeftButtonDown;
+            dynamicViewbox.MouseRightButtonDown += Img_MouseRightButtonDown;
+            
             //svg.PreviewMouseDown += Img_MouseLeftButtonDown;
             svg.AutoSize = true;
-
+          
             
-            canvasss.Children.Add(svg);
+            //connectionPointRight.RenderTransformOrigin= "1.292,0.686";
+            // connectionPointRight.Height
+
+
+
+            // svg.Child = thumb;
+          
+            dynamicViewbox.Child = svg;
+            //dynamicViewbox.Child = magnetSvg;
+            
+          
+           // dynamicViewbox.Child = thumb;
+
+
+            // addSvgHere.Content = svg;
+
+            //Thumb thumb = new Thumb();
+           // thumb.conte
+
+            Canvas.SetTop(dynamicViewbox, 220);
+            Canvas.SetLeft(dynamicViewbox, 469);
+            canvasss.Children.Add(dynamicViewbox);
 
 
 
         }
+        
+
+        private void Img_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Viewbox svgLine = sender as Viewbox;
+            var position = e.GetPosition(svgLine);
+            //  double x= Convert.ToDouble(position.X);
+            // double y = Convert.ToDouble(position.Y);
+            //MessageBox.Show(x + " " + y);
+            /*      Path myPath = new Path();
+                  myPath.Stroke = System.Windows.Media.Brushes.Black;
+                  myPath.Fill = System.Windows.Media.Brushes.MediumSlateBlue;
+                  myPath.StrokeThickness = 3;
+
+
+                  //myPath.HorizontalAlignment = HorizontalAlignment.Center;
+                 // myPath.VerticalAlignment = VerticalAlignment.Center;
+                  LineGeometry myLineGeometry = new LineGeometry();
+                  myLineGeometry.StartPoint = new Point(position.X, position.Y);
+                  myLineGeometry.EndPoint = new Point(position.X+10, position.Y);
+                  myPath.Data = myLineGeometry;
+                  myPath.MouseLeftButtonDown += myPath_MouseLeftButtonDown;*/
+
+            /*    Line line = new Line();
+                line.X1 = position.X;
+                line.Y1 = position.Y;
+                line.X2 = position.X;
+                line.Y2 = position.Y;
+                line.StrokeThickness = 1;*/
+
+            PathFigure myPathFigure = new PathFigure();
+            myPathFigure.StartPoint = new Point(position.X, position.Y);
+            PointCollection myPointCollection = new PointCollection(6);
+            myPointCollection.Add(new Point(10, 100));
+            
+            myPointCollection.Add(new Point(20, 200));
+            myPointCollection.Add(new Point(30, 250));
+            myPointCollection.Add(new Point(40, 300));
+
+
+            PolyBezierSegment myBezierSegment = new PolyBezierSegment();
+            myBezierSegment.Points = myPointCollection;
+
+            PathSegmentCollection myPathSegmentCollection = new PathSegmentCollection();
+            myPathSegmentCollection.Add(myBezierSegment);
+
+            myPathFigure.Segments = myPathSegmentCollection;
+
+            PathFigureCollection myPathFigureCollection = new PathFigureCollection();
+            myPathFigureCollection.Add(myPathFigure);
+
+            PathGeometry myPathGeometry = new PathGeometry();
+            myPathGeometry.Figures = myPathFigureCollection;
+
+            Path myPath = new Path();
+            myPath.Stroke = Brushes.Black;
+            myPath.StrokeThickness = 1;
+
+            myPath.Data = myPathGeometry;
+
+            Canvas.SetTop(myPath, Canvas.GetTop(svgLine));
+            Canvas.SetLeft(myPath, Canvas.GetLeft(svgLine));
+            canvasss.Children.Add(myPath);
+
+
+        }
+     
         private void Img_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            this.dragObj = sender as SvgViewbox;
+
+      
+            dragObj = sender as Viewbox;
+            var pos = e.GetPosition(dragObj);
             this.offset = e.GetPosition(this.canvasss);
-            this.offset.Y -= Canvas.GetTop(this.dragObj);
-            this.offset.X -= Canvas.GetLeft(this.dragObj);
+            this.offset.Y -= Canvas.GetTop(dragObj);
+            this.offset.X -= Canvas.GetLeft(dragObj);
+            
+
+         
             this.canvasss.CaptureMouse();
+        }
+        private void myPath_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            linePath = sender as Path;
+           // var pos = e.GetPosition(linePath);
+         
+            this.canvasss.CaptureMouse();
+        }
+        public void Draw_Click(object sender, RoutedEventArgs e)
+        {
+
+            //  Path myPath = new Path();
+            //  myPath.Stroke = System.Windows.Media.Brushes.Black;
+            //  myPath.Fill = System.Windows.Media.Brushes.MediumSlateBlue;
+            // myPath.StrokeThickness = 4;
+
+            // myPath.HorizontalAlignment = HorizontalAlignment.Left;
+            // myPath.VerticalAlignment = VerticalAlignment.Center;
+            // LineGeometry myLineGeometry = new LineGeometry();
+            // myLineGeometry.StartPoint = new Point(x, y);
+            // myLineGeometry.EndPoint = new Point(x+10.2, y+10.3);
+            // myPath.Data = myLineGeometry;
+
+            Line line = new Line();
+            //line.X1
+            
+
+           // Canvas.SetTop(myPath, 220);
+          //  Canvas.SetLeft(myPath, 469);
+           // canvasss.Children.Add(myPath);
+            
         }
         private void OPEN_Flag(object sender, RoutedEventArgs e)
         {
@@ -240,7 +395,7 @@ namespace ZoomExample
         {
 
             SvgViewbox svg = new SvgViewbox();
-            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svg";
+            string path = "D:/Hannan/FlowChartUI/ZoomExample/Resources/treasure.svggity";
             svg.Source = new System.Uri(path);
             svg.AutoSize = true;
             svg.AllowDrop = true;
@@ -258,7 +413,7 @@ namespace ZoomExample
 
         void OnMouseMove(object sender, MouseEventArgs e)
         {
-            /*if (lastDragPoint.HasValue)
+           /* if (lastDragPoint.HasValue)
             {
                 Point posNow = e.GetPosition(scrollViewer);
 
@@ -274,7 +429,7 @@ namespace ZoomExample
 
         void OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-        /*    var mousePos = e.GetPosition(scrollViewer);
+          /*  var mousePos = e.GetPosition(scrollViewer);
             if (mousePos.X <= scrollViewer.ViewportWidth && mousePos.Y < scrollViewer.ViewportHeight) //make sure we still can use the scrollbars
             {
                 scrollViewer.Cursor = Cursors.SizeAll;
@@ -361,6 +516,11 @@ namespace ZoomExample
                     scrollViewer.ScrollToVerticalOffset(newOffsetY);
                 }
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -25,23 +25,26 @@
                     </TransformGroup>
                 </Grid.LayoutTransform>
                 <Viewbox Grid.Column="0" Grid.Row="0">
-                    <Canvas x:Name="canvasss" Background="Transparent" Height="303" Width="583" ButtonBase.Click="OPEN_Click" AllowDrop="True" PreviewMouseUp="CanvasImages_PreviewMouseLeftButtonUp" PreviewMouseMove="CanvasImages_PreviewMouseMove" RenderTransformOrigin="0.53,0.53">
-
-
-
-                        <SVG:SvgViewbox RenderTransformOrigin="1.213,0.614" Canvas.Left="223" Canvas.Top="134" Height="60" Width="92">
-                            <SVG:SvgViewbox.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform/>
-                                    <RotateTransform Angle="0.594"/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </SVG:SvgViewbox.RenderTransform>
-                        </SVG:SvgViewbox>
-
-
-
+                    <Canvas x:Name="canvasss" Background="Transparent" Height="303" Width="583" ButtonBase.Click="OPEN_Click" AllowDrop="True" PreviewMouseUp="CanvasImages_PreviewMouseLeftButtonUp" PreviewMouseMove="CanvasImages_PreviewMouseMove"  RenderTransformOrigin="0.53,0.53">
+                       
+                            <Path Stroke="Black" StrokeThickness="1">
+                                <Path.Data>
+                                    <PathGeometry>
+                                        <PathGeometry.Figures>
+                                            <PathFigureCollection>
+                                                <PathFigure StartPoint="100,80">
+                                                    <PathFigure.Segments>
+                                                        <PathSegmentCollection>
+                                                            <PolyBezierSegment Points="90,200 140,200 160,200 180,200 430,190 430,280" />
+                                                        </PathSegmentCollection>
+                                                    </PathFigure.Segments>
+                                                </PathFigure>
+                                            </PathFigureCollection>
+                                        </PathGeometry.Figures>
+                                    </PathGeometry>
+                                </Path.Data>
+                            </Path>
+                        
                     </Canvas>
 
                 </Viewbox>
@@ -292,6 +295,7 @@
                     Background="White"
                     BorderThickness="2"
                     Content="\"
+                   
                     Foreground="Black"></Button>
             <Button 
                     Width="60"
@@ -303,6 +307,7 @@
                     Background="White"
                     BorderThickness="2"
                     Content="X"
+                    Click="Draw_Click"    
                     Foreground="Black"></Button>
         </StackPanel>
 

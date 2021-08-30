@@ -46,3 +46,8 @@ D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\SharpVectors.Runtime.Wpf.xml
 D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample.csproj.CopyComplete
 D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\Resources\magnet.svg
 D:\Hannan\FlowChartUI\ZoomExample\obj\x86\Debug\ZoomExample_Content.g.cs
+D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\Syncfusion.Licensing.dll
+D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\Syncfusion.SfDiagram.WPF.dll
+D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\Syncfusion.Shared.WPF.dll
+D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\Syncfusion.SfDiagram.WPF.xml
+D:\Hannan\FlowChartUI\ZoomExample\bin\Debug\Syncfusion.Shared.WPF.xml
